@@ -1,0 +1,1413 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .mb-nav {
+    display: none;
+}
+/* go top top button */
+.goToTopButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
+
+.goToTopButton:hover {
+    color: black;
+}
+
+.goToTopButtonNewsHTML  {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
+
+.goToTopButtonNewsHTML:hover {
+    color: black;
+}
+
+.goToTopButtonHotNews  {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    max-width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: red;
+    color: white;
+    display: none;
+}
+
+.goToTopButtonHotNews:hover {
+    color: black;
+}
+/*    */
+@media only screen and (max-width: 840px) {
+    nav .pc-nav {
+        display: none;
+    }
+    nav .mb-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .mb-nav img {
+        padding: 5px 10px !important;
+        height: 45px;
+    }
+    .modal-body a {
+        color: black !important;
+        text-decoration: none !important;
+        text-align: left;
+    }
+
+    .modal-body ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-body ul li {
+        padding: 0px 20px;
+    }
+
+    /*fixed modal-fade z-index*/
+    .modal-backdrop {
+        z-index: 10 !important;
+    }
+}
+
+body {
+    font-size: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+nav {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 16;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 15px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none !important; 
+    color: white !important;
+    padding: 15px 16px !important;
+    transition: ease 0.3s;
+}
+
+nav ul li a:hover {
+    color: green !important;
+}
+
+.child-nav ul {
+    background-color: black;
+    display: block;
+}
+
+.child-nav ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+.child-nav:hover ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.logoVinFast {
+    height: 46px !important;
+    padding: 5px 10px !important;
+}
+
+section {
+    margin-top: 50px;
+}
+
+/*section > div {
+    border: 15px solid rgb(48, 48, 245);
+    border-radius:0 30px 30px 30px;
+    padding: 30px;
+}*/
+@media screen and (min-width: 840px) {
+    .show {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 100rem;
+    }
+    
+    .product img {
+        width: 100%;
+    }
+    
+    .product a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    .product a:hover {
+        text-decoration: none;
+        color: red;
+    }
+    
+    .car h4, .moto h4 {
+        padding-left: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 2.0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    .maydien {
+        padding-top: 8rem;
+    }
+    .car, .moto {
+       padding: 0 7rem;
+    }
+    
+    .cars, .motos {
+        display: flex;
+        /*flex-direction: row;*/
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+        padding: 50px;
+        /*border-bottom: 1px solid gray;*/
+    }
+    
+    .cars div, .motos div {
+        /*padding: 30px;*/
+        width: 32%;
+        opacity: 0.9;
+        transition: ease 0.8s;
+    }
+    .cars div a, .motos div a {
+        color: #000;
+    }
+    .cars div:hover, .motos div:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        color: #c4161c;
+    }
+    
+    .cars figcaption, .motos figcaption {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .carousel-inner div {
+        align-items: center;
+        width: 100% !important;
+    }
+    
+    .product {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px;
+        /*position: relative;*/
+    }    
+}
+
+@media screen and (max-width: 840px) {
+.product img {
+     width: 75%;
+}
+.show {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.cars div:hover, .motos div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #c4161c;
+}
+.cars div, .motos div {
+    /*padding: 30px;*/
+    opacity: 0.9;
+    transition: ease 0.8s;
+}
+.cars div a, .motos div a {
+    color: #000;
+}
+.car {
+    padding-bottom: 5rem;
+}
+.car h4, .moto h4 {
+    text-align:left;
+    padding-bottom: 2rem;
+    display: inline-block;
+    width: 75%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cars div a, .motos div a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+.cars div, .motos div {
+    padding-top: 0.8rem;
+}
+}
+/* CSS News */
+@media  screen and (min-width: 840px) {
+    .news {
+        width: 100%;
+        height: 55rem;
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 100rem;
+    }
+    
+    .news-left div figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-left div figure img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-right img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-right img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-left {
+        width: 50%;
+        float: left;
+        height: auto;
+        padding-left: 10rem;
+    }
+    
+    .news-right {
+        height: auto;
+     }
+    
+     .news .news-left img {
+        width: 90%;
+        height: auto;
+        padding-top: 30px;
+        overflow: hidden;
+    }
+    
+    .news .news-right img {
+        width: 15%;
+        padding-top: 30px;
+    }
+    
+    .main-news {
+        padding-left: 5rem;
+        margin-bottom: 10px;
+        padding-top: 10rem;
+        font-weight: bold;
+        width: 90%;
+        letter-spacing: 2px;
+        font-size: 2.0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    
+    .the-text {
+        display: inline-block;
+        width: 90%;
+        padding-top: 0.8rem;
+        font-size: 1.5rem;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .the-text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .text {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .news1 {
+        margin-top: 20px;
+    }
+}
+@media  screen and (max-width: 840px) {
+    .news {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100rem;
+    }
+
+    .main-news {
+        text-align: left;
+        display: inline-block;
+        width: 75%;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        padding-bottom: 0.8rem;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .news img {
+        width: 75%;
+    }
+
+    .text {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 0.8rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .the-text {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 0.8rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .the-text:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    .news-right a:hover {
+        text-decoration: none;
+        color: #c4161c;
+    }
+
+    #text-1:last-child {
+        padding-bottom: 7rem;
+    }
+
+    .news-left div figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-left div figure img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .news-right img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .news-right img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+/* news.html */
+@media screen and (min-width: 840px) {
+    .imgshowroom img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-showroom {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .main-showroom h2 {
+        font-weight: bold;
+        color: #000;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .main-showroom p {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: #c4161c;
+    }
+    
+    .middle-showroom {
+        width: 65%;
+        margin: 0 auto;
+        max-width: 110rem;
+    }
+    
+    .middle-showroom p {
+        font-size: 1rem;
+        text-transform: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+    }
+    
+    .middle-showroom h4 {
+        padding: 10px;
+    }
+
+    .image-showroom {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 840px) {
+    .imgshowroom img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-showroom {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .main-showroom h2 {
+        width: 90%;
+        margin: 0 auto;
+        font-weight: bold;
+        color: #000;
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+    
+    .main-showroom p {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: #c4161c;
+    }
+    
+    .middle-showroom {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .middle-showroom p {
+        font-size: 1rem;
+        text-transform: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+    }
+    
+    .middle-showroom h4 {
+        padding-top: 1rem;
+        font-size: 0.4rem;
+    }
+    
+    .image-showroom {
+        width: 100%;
+    }
+}
+
+.link {
+    font-style: italic;
+    padding-bottom: 70px;
+}
+
+.image-showroom {
+    margin: 0 auto;
+}
+
+.image-showroom img {
+    width: 100%;
+}
+
+.text-news {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-news2 {
+    padding-top: 10px;
+}
+
+/* hot-news.html desktop and mobile */
+@media  screen and (min-width: 840px) {
+     .hot-news {
+        width: 100%;
+        margin: 0 auto;
+        /*max-width: 100rem;*/
+        text-decoration: none;
+    }
+
+    .hot-news-top {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .hot-news-top h2 {
+        text-align: center;
+        color:#000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .hot-news a:hover {
+        text-decoration: none;
+    }
+
+    .hot-news a:hover h2 {
+        color: red;
+    }
+
+    .hot-news-middle {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding-bottom: 200px;
+    }
+
+    .hot-news-top img, .first-hot-news-middle, .second-hot-news-middle {
+        width: 100%;
+        height: auto;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .first-hot-news-middle img, .second-hot-news-middle img {
+        width: 100%;
+    }
+
+    .first-hot-news-middle h2, .second-hot-news-middle h2 {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .second-hot-news-middle {
+        padding-left: 10px;
+    }
+
+    .hot-news-last {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        box-sizing: border-box;   
+    }
+    .hot-news-last:last-child {
+        padding-bottom: 15rem;
+    }
+    .hot-news-last div {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .hot-news-last div img {
+        width: 95%;
+    }
+
+    .hot-news-last h3 {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hot-news-last h3 a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .hot-news-last h3 a:hover {
+        color: #c4161c;
+    }
+
+    .hot-news-last p {
+        text-align: left;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    .h2-news {
+        width: 71%;
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    .first-h2 {
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70%;
+        padding-top: 90px;
+    }
+
+    .hot-news-last div img {
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+
+    .hot-news-last div img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .hot-news {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100rem;
+    }
+
+    .hot-news img {
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+    .hot-news-last div {
+        min-width: 10px;
+    }
+    .hot-news-top h2 {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .first-h2 {
+        display: inline-block;
+        width: 95%;
+        text-align: left;
+        font-weight: bold;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        font-size: 2rem !important;
+    }
+
+    .first-h2 {
+        font-size: 1rem;
+    }
+    .h2-news {
+        display: inline-block;
+        padding-top: 5rem;
+        width: 95%;
+        text-align: left;
+    }
+    .hot-news-middle h2 {
+        font-size: 1.1rem;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#000;
+        display:inline-block;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+    .hot-news-last img {
+        width: 35%;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    .hot-news-last img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .content-right {
+        display: inline-block;
+        width: 60%;
+        vertical-align: top;
+        padding-left: 0.9rem;
+        text-align: left;
+        padding-top: 0.2rem;
+    }
+    .content-right h3 {
+        font-size: 0.6rem !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .content-right h3 a {
+        color: #000;
+        text-decoration: none;
+    }
+    .content-right h3 a:hover {
+        color: #c4161c;
+    }
+    .content-right p {
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .hot-news-last:last-child {
+        padding-bottom: 13rem;
+    }
+}
+@media only screen and (max-width: 840px) and (min-width: 410px) {
+    .hot-news {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100rem;
+    }
+
+    .hot-news img {
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+    .hot-news-last div {
+        min-width: 10px;
+    }
+    .hot-news-top h2 {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .first-h2 {
+        display: inline-block;
+        width: 95%;
+        text-align: left;
+        font-weight: bold;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+        font-size: 2rem !important;
+    }
+
+    .first-h2 {
+        font-size: 1rem;
+    }
+    .h2-news {
+        display: inline-block;
+        padding-top: 5rem;
+        width: 95%;
+        text-align: left;
+    }
+    .hot-news-middle h2 {
+        font-size: 1.1rem;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#000;
+        display:inline-block;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+    .hot-news-last img {
+        width: 40%;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        -webkit-transition: .3s ease-in-out;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    .hot-news-last img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .content-right {
+        display: inline-block;
+        width: 58%;
+        vertical-align: top;
+        padding-left: 0.9rem;
+        text-align: left;
+        padding-top: 0.2rem;
+    }
+    .content-right h3 {
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .content-right h3 a {
+        color: #000;
+        text-decoration: none;
+    }
+    .content-right h3 a:hover {
+        color: #c4161c;
+    }
+    .content-right p {
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serife;
+    }
+    .hot-news-last:last-child {
+        padding-bottom: 13rem;
+    }
+}
+/*CSS Footer */
+footer {
+    width: 100%;
+    padding-right: 300px;
+    padding-left: 300px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #e9e0e02a;
+    text-transform: none;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 0.9rem;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100rem;
+}
+footer ul {
+    width: 16%;
+    max-width: 15rem;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding-left: 2rem;
+}
+
+footer ul:last-child {
+    border-right: none;
+}
+
+footer ul h5 {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: #000;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #c4161c;
+}
+
+@media only screen and (max-width: 840px) {
+    footer {
+        flex-direction: column;
+    }
+    footer ul {
+        width: 95%;
+        border-right: none;
+    }
+    footer ul h5 {
+        padding-top: 20px;
+    }
+}
+#menu-content div {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#menu-content p {
+    font-size: 0.7rem;
+}
+
+#menu-content div li {
+    padding-right: 0.8rem;
+}
+
+#menu-content li a i {
+    font-size: 1.5rem;
+}
+
+/* car.html css */
+@media screen and (min-width: 840px) {
+    .tab {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+    }
+    
+    .tab div {
+        width: 35%;
+        padding: 2%;
+        margin: 1%
+    }
+    
+    .tab div:hover {
+        outline: 5px solid lightgray;
+    }
+    
+    .tab div img {
+        width: 100%;
+    }
+    
+    .tab div figcaption {
+        padding: 10px;
+    }
+    
+    .tab div figcaption h4 {
+        text-align: center;
+        padding: 5px;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .tab h5 {
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .tab a, .infor a {
+        text-decoration: none;
+        color: black;
+        transition: ease 0.3s;
+    }
+    
+    .tab a:hover, .infor a:hover {
+        text-decoration: none;
+        color: green;
+    }
+    .tab div:last-child {
+        padding-bottom: 8rem;
+    }
+}
+@media screen and (max-width: 840px) {
+    .tab {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .tab div img {
+        width: 80%;
+        padding-bottom: 0.5rem;
+    }
+
+    .tab h4 {
+        font-size: 1.4rem;
+        text-align: center justify;
+        font-weight: bold;
+    }
+    .tab h5 {
+        font-size: 0.9rem;
+    }
+    .tab ul li {
+        list-style-type: none;
+        text-align: center;
+        width: 94%;
+    }
+    .tab a, .infor a {
+        text-decoration: none;
+        color: black;
+        transition: ease 0.3s;
+    }
+    .tab a:hover, .infor a:hover {
+        text-decoration: none;
+        color: green;
+    }
+    .tab div:last-child {
+        padding-bottom: 8rem;
+    }
+}
+/*css lux-a2.html*/
+@media screen and (min-width: 840px) {
+    .infor {
+        display: flex;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .imag {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        padding: 0% 1%;
+    }
+    
+    .imag img {
+        width: 100%;
+    }
+    
+    .imag .main-imag {
+        width: 100%;
+    }
+    
+    .imag .thumb {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .imag .thumb .thumbnail {
+        width: 20%;
+        padding: 1%;
+        margin: 2%;
+        border: 1px solid gray;
+    }
+    .imag .thumb .thumbnail:hover {
+        border: 1px solid green;
+    }
+    .description {
+        width: 60%;
+        padding: 0% 1%;
+        margin: 2%;
+    }
+    
+    .description h3 {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 24px 26px;
+        font-weight: bolder;
+    }
+    
+    .description ul {
+        list-style-type: square;
+        padding: 10px 20px;
+        display: none;
+        font-size: large;
+    }
+    
+    .description .kt {
+        display: block;
+    }
+    
+    .description div {
+        width: 100%;
+        position: inherit;
+    }
+    
+    .but {
+        position: absolute;
+        display: flex;
+        border: 1px groove;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .but .but1 {
+        width: 20%;
+        padding: 14px 16px; 
+        text-align: center;
+        background-color: black;
+        border: none;
+        outline: none;
+        color: white;
+        transition: ease 0.2s;
+    }
+    
+    .but .but1[value] {
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .but .but1:hover {
+        background-color: green;
+    }
+    
+    .but .but1:first-child {
+        background-color: green;
+    }
+    
+    .bot h3 {
+        text-align: center;
+        color: green;
+    }
+    
+    .middle-showroom h4 {
+        font-weight: bolder;
+        font-size: large;
+    }  
+}
+@media screen and (max-width: 840px) {
+    .infor {
+        width: 100%;
+        padding-top: 5rem;
+        margin: 0 auto;
+    }
+    
+    .imag {
+        width: 95%;
+        /*display: flex;
+        flex-direction: column;*/
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .imag img {
+        width: 100%;
+    }
+    
+    .imag .main-imag {
+        width: 100%;
+    }
+    
+    .imag .thumb {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding-bottom: 0.6rem;
+    }
+    
+    .imag .thumb .thumbnail {
+        width: 20%;
+        padding: 1%;
+        margin: 2%;
+        border: 1px solid gray;
+    }
+    .description {
+        width: 95%;
+        margin: 0 auto;
+        /*padding: 0% 1%;*/
+       /* margin: 2%;*/
+    }
+    
+    .description h3 {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .description ul {
+        list-style-type: circle;
+        padding: 10px 20px;
+        display: none;
+        font-size: 0.75rem;
+    }
+    
+    .description .kt {
+        display: block;
+    }
+    
+    .description div {
+        width: 100%;
+        position: inherit;
+    }
+    
+    .but {
+        position: absolute;
+        display: flex;
+        border: 1px groove;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+    
+    .but .but1 {
+        width: 20%;
+        padding: 0.5rem 0.5rem; 
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        background-color: black;
+        border: none;
+        outline: none;
+        color: white;
+        transition: ease 0.2s;
+    }
+    
+    .but .but1[value] {
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .but .but1:hover {
+        background-color: green;
+    }
+    
+    .but .but1:first-child {
+        background-color: green;
+    }
+    
+    .bot h3 {
+        text-align: center;
+        color: green;
+    }
+    
+    .middle-showroom h4 {
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+}
+/*Contact index.html*/
+
+@media screen and (min-width: 800px) {
+    .ok {
+        padding-left: 3.5rem;
+        padding-bottom: 3rem;
+        padding-top: 10rem;
+        font-weight: bold;
+        width: 75%;
+        letter-spacing: 2px;
+        font-size: 2.0rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    form {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    form table {
+        width: 100%;
+    }
+    
+    form table tr td {
+        padding: 10px
+    }
+    
+    form table tr td:last-child {
+        width: 70%;
+    }
+    
+    form input {
+        width: 80%;
+    }
+    
+    form table tr:last-child > td input {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    .ok {
+        padding-left: 0.5rem;
+        padding-top: 5rem;
+        font-weight: bold;
+        width: 90%;
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 auto;
+    }
+    form {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    table tr td {
+        font-size: 0.7rem;
+    }
+    form table {
+        width: 100%;
+    }
+    
+    form table tr td {
+       padding: 5px
+    }
+    
+    form table tr td:last-child {
+        width: 70%;
+    }
+    
+    form input {
+        width: 90%;
+    }
+    
+    form table tr:last-child > td input {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+
+.carousel-inner {
+    margin-top: 52px !important;
+}
+
+@media only screen and (max-width: 840px) {
+    .carousel-inner {
+        margin-top: 45px !important;
+    }
+}

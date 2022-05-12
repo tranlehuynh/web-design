@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
+        <title>Vinfast Ludo</title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <meta name="title" content="Mãnh liệt tinh thần Việt"/>
+        <meta name="keywords" content="Vinfast, VietNam, Vingroup"/>
+        <meta name="description" content="Trang giới thiệu sản phẩm Vinfast và doanh nghiệp"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            //Go to top button
+                $(document).ready(function () {
+                    $(window).scroll(function (){
+                        if($(this).scrollTop() > 100) {
+                        //Show and hide the button
+                            $('.goToTopButton').fadeIn();
+                        } else {
+                            $('.goToTopButton').fadeOut();
+                        }
+                    });
+                    //Smooth scrolling
+                        $('.goToTopButton').click(function() {
+                            $('html,body').animate({scrollTop: 0}, 2000)
+                        })
+                });
+        </script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".but1").click(function() {
+                    $(".but1").css("background-color", "black");
+                    $(this).css("background-color", "green");
+                    $(".description ul").css("display", "none");
+                    var temp = $(this).attr("id");
+                    $("." + temp).css("display", "block");
+                });
+                $(".thumbnail a img").click(function() {
+                    $(".main-imag img").attr("src", $(this).attr("src"));
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
+        <nav>
+            <ul class="pc-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i> </a></li>
+                <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="car.html">Ôtô Vinfast</a></li>
+                        <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                        <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                    </ul>
+                </li>
+                <li class="child-nav"><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="hot-news.html">Tin nổi bật</a></li>
+                        <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                    </ul>
+                </li>
+                <li><img class="logoVinFast" src="LogoVinfast/logoEdit.png" alt="Logo"></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+            </ul>
+            <ul class="mb-nav">
+                <li><img src="LogoVinfast/logo.png"/></li>
+                <li>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="height: 46px; background-color: black; font-size: 14px !important; padding: 0 !important; border: none;"><a><i class="fa fa-bars"></i></a></button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Danh mục</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="car.html">Ôtô Vinfast</a></li>
+                                            <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                                            <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="hot-news.html">Tin nổi bật</a></li>
+                                            <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                                    <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="infor">
+            <div class="imag">
+                <div class="main-imag"><img src="LogoVinfast/Product/ludo-blue.png" alt="Ludo"></div>
+                <div class="thumb">
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/ludo-dark-blue.png" alt="Ludo"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/ludo-grey.png" alt="Ludo"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/ludo-red.png" alt="Ludo"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/ludo-white.png" alt="Ludo"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/ludo-blue.png" alt="Ludo"></a></div>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Thông tin cơ bản</h3>
+                <div class="but">
+                    <input type="button" value="Kích thước" class="but1" id="kt"/>
+                    <input type="button" value="Động cơ" class="but1" id="dc">
+                    <input type="button" value="Ngoại hình" class="but1" id="ngt">
+                    <input type="button" value="Nguồn" class="but1" id="nt">
+                    <input type="button" value="Tiện ích" class="but1" id="at">
+                </div>
+                <ul class="kt">
+                    <li>Dài x Rộng x Cao (mm): 1700 x 715 x 1070</li>
+                    <li>KHOẢNG CÁCH TRỤC BÁNH TRƯỚC-SAU: 1157 mm</li>
+                    <li>Khối lượng bản thân (Kg): 68 kg</li>
+                    <li>Khoảng sáng gầm xe: 147 mm</li>
+                    <li>CHIỀU CAO YÊN: 750 mm</li>
+                </ul>
+                <ul class="dc">
+                    <li>Loại động cơ: Động cơ một chiều không chổi than</li>
+                    <li>CÔNG SUẤT DANH ĐỊNH: 500 W</li>
+                    <li>TỐC ĐỘ TỐI ĐA: 33,5±5% Km/h</li>
+                    <li>Công suất hữu ích lớn nhất (Công suất lớn nhất): 1100 W</li>
+                </ul>
+                <ul class="ngt">
+                    <li>PHANH TRƯỚC: Phanh Đĩa, dẫn động thủy lực, điều khiển bằng tay </li>
+                    <li>PHANH SAU: Phanh tang chống, dẫn động cơ khí, điều khiển bằng tay</li>
+                    <li>Kích thước lốp trước | sau: 70/90 - 14 34J | 80/90 - 14 40P</li>
+                    <li>ĐÈN PHA TRƯỚC: Led</li>
+                    <li>ĐÈN XI NHAN, ĐÈN HẬU: LED</li>
+                    <li>Màu xe (tùy chọn 1 trong 5 màu: Trắng, Xanh, Xám, Đỏ, Xanh đậm</li>
+                </ul>
+                <ul class="nt">
+                    <li>LOẠI ẮC-QUY: Ắc-quy li-ion</li>
+                    <li>DUNG LƯỢNG: 22 Ah</li>
+                    <li>TRỌNG LƯỢNG TRUNG BÌNH: 7.8 Kg</li>
+                    <li>Quãng đường trên 1 lần đổi pin: 70 Km</li>
+                    <li>LOẠI SẠC: Sạc ắc-quy li-ion kèm theo xe do VINFAST cung cấp</li>
+                </ul>
+                <ul class="at">
+                    <li>tích hợp eSIM kết nối điện thoại thông minh qua Mobile App</li>
+                    <li>Định vị GPS</li>
+                    <li>Đồng hồ lái: LCD Led Backlit 4.5”</li>
+                    <li>Cảnh báo chống trộm</li>
+                </ul>
+            </div>
+        </section>
+        <section class="the-showroom">
+            <div class="main-showroom"><h2>Đánh giá xe máy điện Vinfast Ludo</h2></div>
+            <div class="middle-showroom"><h4>Thiết kế xe máy điện Vinfast Ludo</h4>
+                <p class="text-news">Xe máy điện Vinfast Ludo – mẫu xe mới ra mắt của hãng Vinfast. Xe được thiết kế dựa trên phong cách Ý nên khá là hiện đại và cá tính với những nét nhấn mạnh mẽ và dứt khoát. Với kiểu dáng gọn nhẹ thì Ludo Vinfast hoàn toàn phù hợp với nhu cầu di chuyển ở nội thành.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/ludo-banner.jpg" alt="Klara"/></div>
+                <p class="text-news">Vinfast Ludo sở hữu thiết kế nhỏ gọn, phù hợp với đa số người sử dụng Việt, từ học sinh, sinh viên đến người lớn tuổi. Ludo được hãng trang bị cho kiểu dáng trẻ trung, lịch lãm. Cụm đèn pha cách điệu thời trang và cặp đèn xi nhan tách rời.</p>
+                <p class="text-news">Với cốp trước nhỏ gọn, người dùng có thể để các đồ dùng kích thước nhỏ, cốp dưới yên để vừa chiếc áo mưa. Yên xe máy điện Vinfast Ludo êm ái. Khoảng cách giữa tay lái, sàn để chân và yên xe hợp lý mang lại tư thế ngồi thoải mái nhất cho người điều khiển xe. Khối lượng xe chỉ 68kg mà tải trọng của Ludo lên đến 140kg.</p>
+                <h4>Những công nghệ hiện đại được trang bị trên xe Ludo</h4>
+                <p class="text-news">Đúng chuẩn hàng của Vinfast nên Ludo được trang bị linh kiện, phụ tùng chất lượng và và áp dụng những công nghệ tiên tiến.</p>
+                <p class="text-news">Nhờ công nghệ eSIM người sử dụng xe có thể kiểm soát hành trình xe, chống trộm, cảnh báo vượt quá tốc độ và thông báo các thông tin liên quan đến lịch sử vận hành.</p>
+                <p class="text-news">Bảng đồng hồ của Ludo là màn hình Led với kích thước 4.8inch. Ngoài hiển thị các thông số cơ bản như quãng đường, vận tốc, đèn báo năng lượng, đèn báo xi nhan, đèn thì mặt đồng hồ của Ludo sẽ hiển thị các thông tin như đèn báo chế độ đỗ xe, đèn báo lỗi hệ thống, chế độ lái Eco – Sport…..</p>
+                <p class="text-news">Khung xe máy điện Vinfast Ludo được trải qua quá trình thử nghiệm, kiểm tra nghiêm ngặt trước khi xuất xưởng. Bài thử vặn xoắn diễn ra liên tục trong 100 giờ liên tục, các bài kiểm tra khác bao gồm 3 lần chạy bền 30.000km, kiểm tra mỏi 1.000 chu kỳ, thử nghiệm tĩnh 7.000N và thử nghiệm chạy đường gồ ghề 1.000km.</p>
+                <h4>Động cơ BOSCH</h4>
+                <p class="text-news">Động cơ BOSCH tích hợp trong vành xe. Xe điện Ludo Vinfast có công suất động cơ 500W, momen xoắn cực đại 60. Vận tốc max của xe đạt 50km/h ở chế độ lái Sport và 35km/h với chế độ lái Eco.</p>
+                <p class="text-news">Vinfast Ludo được trang bị phanh đĩa trước và phanh cơ sau, đảm bảo an toàn tuyệt đối cho người dùng. Vành xe 14inch tương đương các xe tay ga phổ thông. Công nghệ lốp không săm, đường kính bánh xe rộng cho tiết diện tiếp xúc với mặt đường lớn, giúp bám đường tốt hơn. Từ đó người dùng an tâm khi vận hành xe, nhất là những lúc vào cua.</p>
+                <h4>Pin lithium ion chống nước</h4>
+                <p class="text-news">Xe được trang bị khối pin lithium ion đạt chuẩn chống nước và bụi IP57. Như vậy, Ludo hoàn toàn có thể vận hành trong điều kiện mưa ngập mà không ảnh hưởng đến động cơ. Quãng đường mà xe đi được lên đến 70km mỗi lần sạc đầy. Điểm khác biệt ở phiên bản xe máy điện Vinfast Ludo là có thể thuê hoặc thay pin mới tại các trạm đổi pin trải khắp đất nước thay vì phải sạc pin như các dòng xe điện khác.</p>
+            </div>
+        </section>
+        <section class="bot">
+            <h3>Sản phẩm khác</h3>
+            <div class="tab">
+                <div>
+                    <a href="impes.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/impes-banner.jpg"/>
+                            <figcaption>
+                                <h4>Impes</h4>
+                                <ul>
+                                    <li><h5>Tốc độ tối đa: 50 km/h</h5></li>
+                                    <li><h5>Nguồn: Pin LITHIUM</h5></li>
+                                    <li><h5>Công suất: 1200 W</h5></li>
+                                    <li><h5>Quãng đường trên 1 lần đổi pin: 68 Km</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="klara.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/klara-banner.jpg"/>
+                            <figcaption>
+                                <h4>Klara</h4>
+                                <ul>
+                                    <li><h5>Tốc độ tối đa: 45-50 km/h</h5></li>
+                                    <li><h5>Nguồn: Ắc quy - Pin LITHIUM</h5></li>
+                                    <li><h5>Công suất: 800-1200 W</h5></li>
+                                    <li><h5>Quãng đường trên 1 lần đổi pin: 80 Km</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+                <h5>Liên hệ</h5>
+                <li><a href="tel: 1900 232289">1900 232389</a></li>
+                <li><a href="mailto:cskh@vinfast.vn">cskh@vinfast.vn</a></li>
+            </ul>
+            <ul>
+                <h5>Tin Tức</h5>
+                <li><a href="hot-news.html">Tin nổi bật</a></li>
+                <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+            </ul>
+            <ul>
+                <h5>Xe Ô Tô VinFast</h5>
+                <li><a href="lux-a2.html">Lux A2.0</a></li>
+                <li><a href="lux-sa2.html">Lux SA2.0</a></li>
+                <li><a href="fadil.html">Fadil</a></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+            </ul>
+            <ul>
+                <h5>Xe Máy Điện VinFast</h5>
+                <li><a href="klara.html">Klara</a></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+            </ul>
+            <ul id="menu-content">
+                <h5>Mạng xã hội</h5>
+                <div>
+                    <li><a href="https://www.facebook.com/VinFastAuto.Official/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/vinfastofficial/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/vinfastofficial"><i class="fab fa-twitter"></i></a></li>
+                </div>
+                <p>VinFast. All rights reserved. <br> &copy; Copyright 2018</p>
+            </ul>
+    </footer>
+    </body>
+</html>

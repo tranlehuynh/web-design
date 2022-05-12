@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
+        <title>Vinfast Klara</title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <meta name="title" content="Mãnh liệt tinh thần Việt"/>
+        <meta name="keywords" content="Vinfast, VietNam, Vingroup"/>
+        <meta name="description" content="Trang giới thiệu sản phẩm Vinfast và doanh nghiệp"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            //Go to top button
+                $(document).ready(function () {
+                    $(window).scroll(function (){
+                        if($(this).scrollTop() > 100) {
+                        //Show and hide the button
+                            $('.goToTopButton').fadeIn();
+                        } else {
+                            $('.goToTopButton').fadeOut();
+                        }
+                    });
+                    //Smooth scrolling
+                        $('.goToTopButton').click(function() {
+                            $('html,body').animate({scrollTop: 0}, 2000)
+                        })
+                });
+        </script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".but1").click(function() {
+                    $(".but1").css("background-color", "black");
+                    $(this).css("background-color", "green");
+                    $(".description ul").css("display", "none");
+                    var temp = $(this).attr("id");
+                    $("." + temp).css("display", "block");
+                });
+                $(".thumbnail a img").click(function() {
+                    $(".main-imag img").attr("src", $(this).attr("src"));
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
+        <nav>
+            <ul class="pc-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i> </a></li>
+                <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="car.html">Ôtô Vinfast</a></li>
+                        <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                        <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                    </ul>
+                </li>
+                <li class="child-nav"><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="hot-news.html">Tin nổi bật</a></li>
+                        <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                    </ul>
+                </li>
+                <li><img class="logoVinFast" src="LogoVinfast/logoEdit.png" alt="Logo"></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+            </ul>
+            <ul class="mb-nav">
+                <li><img src="LogoVinfast/logo.png"/></li>
+                <li>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="height: 46px; background-color: black; font-size: 14px !important; padding: 0 !important; border: none;"><a><i class="fa fa-bars"></i></a></button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Danh mục</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="car.html">Ôtô Vinfast</a></li>
+                                            <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                                            <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="hot-news.html">Tin nổi bật</a></li>
+                                            <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                                    <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="infor">
+            <div class="imag">
+                <div class="main-imag"><img src="LogoVinfast/Product/klara-white.png" alt="Klara"></div>
+                <div class="thumb">
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-white.png" alt="Klara"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-red.png" alt="Klara"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-gray.png" alt="Klara"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-cream.png" alt="Klara"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-blue.png" alt="Klara"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/klara-black.png" alt="Klara"></a></div>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Thông tin cơ bản</h3>
+                <div class="but">
+                    <input type="button" value="Kích thước" class="but1" id="kt"/>
+                    <input type="button" value="Động cơ" class="but1" id="dc">
+                    <input type="button" value="Ngoại hình" class="but1" id="ngt">
+                    <input type="button" value="Nguồn" class="but1" id="nt">
+                    <input type="button" value="Tiện ích" class="but1" id="at">
+                </div>
+                <ul class="kt">
+                    <li>Dài x Rộng x Cao (mm): 1910 x 685 x 1130 mm</li>
+                    <li>KHOẢNG CÁCH TRỤC BÁNH TRƯỚC-SAU: 1300 mm</li>
+                    <li>Khối lượng bản thân (Kg): 95 - 116 kg</li>
+                    <li>Khoảng sáng gầm xe: 125 mm</li>
+                    <li>CHIỀU CAO YÊN: 760 mm</li>
+                </ul>
+                <ul class="dc">
+                    <li>Loại động cơ: Động cơ một chiều không chổi than (BLDC) tích hợp trong bánh sau</li>
+                    <li>CÔNG SUẤT DANH ĐỊNH: 800-1200 W</li>
+                    <li>BỘ ĐIỀU KHIỂN: Bộ điều khiển động cơ BLDC, hiệu suất cao, dòng tối đa 35A-40A, phanh tái sinh</li>
+                    <li>TỐC ĐỘ TỐI ĐA: 45-50 km/h</li>
+                </ul>
+                <ul class="ngt">
+                    <li>PHANH TRƯỚC/SAU: Đĩa </li>
+                    <li>KÍCH THƯỚC VÀNH XE: Vành trước 14”, vành sau 12”</li>
+                    <li>ĐÈN PHA TRƯỚC: Halogen-Led</li>
+                    <li>ĐÈN XI NHAN, ĐÈN HẬU: LED</li>
+                    <li>Sàn để chân phẳng, thuận tiện để đồ, cho trẻ em đứng.</li>
+                    <li>Màu xe (tùy chọn 1 trong 6 màu: Trắng, Đen, Xanh, Xám, Đỏ, Kem</li>
+                </ul>
+                <ul class="nt">
+                    <li>LOẠI ẮC-QUY: Ắc-quy li-ion - Ắc-quy chì a-xít kín khí, 5 bình nối tiếp </li>
+                    <li>DUNG LƯỢNG TỐI ĐA: 21-22.8 Ah</li>
+                    <li>DUNG LƯỢNG TIÊU CHUẨN: 20-22 Ah</li>
+                    <li>Quãng đường trên 1 lần đổi pin: 80 Km</li>
+                    <li>TRỌNG LƯỢNG TRUNG BÌNH: 11.2-35 kg</li>
+                    <li>THỜI GIAN SẠC TIÊU CHUẨN: 4 giờ (90% SOC) hoặc 7 giờ (100% SOC) - 8 giờ (80% SOC) hoặc 10 giờ (95% SOC) hoặc 12 giờ (100% SOC)</li>
+                    <li>THỜI GIAN SẠC TỐI ĐA: 12 giờ 15 phút</li>
+                    <li>LOẠI SẠC: Sạc ắc-quy li-ion(chì a-xít) kèm theo xe do VINFAST cung cấp</li>
+                </ul>
+                <ul class="at">
+                    <li>THỂ TÍCH KHOANG CHỨA ĐỒ DƯỚI YÊN: 21-22 L</li>
+                    <li>BỘ KẾT NỐI THÔNG MINH: kết nối 3G, Bluetooth, GPS</li>
+                    <li>Đồng hồ lái: LCD Led Backlit 4.5”</li>
+                    <li>CHÌA KHÓA TỪ: RF</li>
+                </ul>
+            </div>
+        </section>
+        <section class="the-showroom">
+            <div class="main-showroom"><h2>Đánh giá xe máy điện Vinfast Klara</h2></div>
+            <div class="middle-showroom"><h4>Ngoại thất</h4>
+                <p class="text-news">Nhìn từ trực diện, Klara không khác gì so với những mẫu xe máy chạy bằng xăng thậm chí còn có thiết kế độc đáo hơn những mẫu xe máy điện khác trên thị trường.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/klara-heading.jpg" alt="Klara"/></div>
+                <p class="text-news">Đầu xe được tạo điểm nhấn bởi đèn pha dạng LED hình ngũ giác có các góc bo khá nhẹ nhàng, bản tiêu chuẩn được trang bị đèn Halogen kết hợp đèn LED. Ngay phía trước là logo Vinfast với hình chữ V cách điệu được bố trí hài hòa. Bên cạnh đó, xe còn có cặp đèn xinhan dạng LED có thiết kế khá mảnh mai cân đối hai bên mặt nạ hướng lên cao đẹp mắt.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/dau-xe-klara.jpg" alt="Klara"></div>
+                <p class="text-news">Phần thân Klara bầu và thuôn hẳn về sau tương tự như những chiếc Vespa, yên xe có thiết kế liền mạch và được phân tách thành 2 khu vực riêng biệt, 1 cho người lái, một cho người ngồi sau.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/than-xe-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Không chỉ vậy, độ dốc mặt yên của chiếc Klara còn được thiết kế theo tỷ lệ vừa phải không để gây ra tình trạng trượt nhào về phía trước khi phanh gấp. Klara đáp ứng nhu cầu di chuyển của đa số khách hàng nữ khi có yên trước nhỏ và chỉ cao 760 mm, do đó, người lái có chiều cao khiêm tốn cũng dễ dàng chống chân hơn.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/yen-xe-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Nối liền đầu và thân xe là sàn để chân phía dưới, mặt sàn đổ dốc về phía trước tránh gây mỏi cổ chân khi ngồi, không chỉ vậy, vị trí này còn có thiết kế hoa văn phức tạp tránh trơn, trượt.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/duoi-xe-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Đuôi xe ấn tượng với những nét tạo hình góc cạnh mang đến tổng thể vừa bầu bĩnh vừa cứng cáp lạ mắt. Đi kèm với đó là cụm đèn hậu bóng LED hình vòng cung được tích hợp đèn phanh, ngay bên dưới là logo Vinfast mạ crom bóng bẩy.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/den-hau-klara.jpg" alt="Klara"/></div>
+                <h4>Động cơ</h4>
+                <p class="text-news">Sức mạnh của mẫu xe máy điện Vinfast Klara sẽ làm nhiều khách hàng ngạc nhiên, cụ thể bản dùng pin Lithium-ion có công suất 1.200W, trong khi bản dùng ắc quy axit-chì đạt 800W. Với hiệu năng này, Vinfast Klara có thể đạt tốc độ tối đa từ 50-70 km/h. Mỗi lần sạc đầy pin, chủ nhân có thể di chuyển quãng đường 80 Km</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/phanh-sau-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Hai phiên bản đều dùng lốp không săm, vành trước 14 inch, vành sau 12 inch, vành trước lớn hơn giúp người lái điều khiển được linh hoạt hơn, vượt chướng ngại vật dễ dàng hơn. Bên cạnh đó, Vinfast Klara còn được tích hợp phanh đĩa trước, sau giúp việc lái xe được an toàn và phản ứng nhanh nhạy.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/acquy-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Xe máy điện Vinfast Klara đang giải quyết bài toán khó cho tình hình ngập nước tại thị trường Việt Nam nhờ khả năng chống ngập nước lên đến 50 cm. Để khẳng định chất lượng, Vinfast đã ngâm xe máy điện Klara ở độ sâu 50 cm trong thời gian 30 phút để thử khả năng chịu nước, kết quả là sau khoảng thời gian đó xe vẫn hoạt động bình thường.</p>
+                <h4>Tiện nghi trang bị</h4>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/dong-ho-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Mặc dù là chiếc xe máy điện nhưng xe Vinfast Klara lại sở hữu các tiện ích gồm kết nối 3G, Bluetooth, định vị GPS, đồng hồ lái LCD kích thước 4.5 inch hiển thị đầy đủ các thông số như dung lượng pin, vận tốc, thời gian, nhiệt độ, hành trình và chế độ vận hành</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/chia-khoa-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Ngoài ra, xe máy điện Vinfast Klara còn có một số tính năng khác như khóa từ thông minh 4 trong 1, gồm khóa điện, khóa từ, khóa cổ và khóa yên, khóa và mở khóa xe từ xa, móc treo đồ có thể mở ra gập vào rất tiện lợi.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-klara/khoi-dong-klara.jpg" alt="Klara"/></div>
+                <p class="text-news">Vinfast Klara có khả năng chứa đồ khá lớn nhờ dung tích cốp 21L cho bản cao cấp A1 và 22L với bản tiêu chuẩn A2 giúp chủ nhân chứa được nhiều vật dụng như nón bảo hiểm, laptop, áo khoác</p>
+                <h4>An toàn – hiện đại </h4>
+                <p class="text-news">Nhằm giúp chuyến đi của khách hàng thêm phần an toàn, Vinfast cài đặt các ứng dụng thông minh trên xe lúc di chuyển.</p>
+                <p class="text-news">Với chức năng đồng bộ thông tin của xe với điện thoại thông minh, tìm trạm sạc, điểm cho thuê pin và gọi khẩn cấp, những tình huống khó khăn trên đường sẽ dễ dàng được giải quyết hơn.</p>
+                <h4>Kết luận</h4>
+                <p class="text-news">Nhìn chung, Vinfast Klara đã có màn ra mắt vô cùng ấn tượng. Với vẻ ngoài tinh tế, tiện nghi vô cùng hiện đại so với các mẫu xe trong nước cùng cảm giác lái êm ái, Vinfast Klara hứa hẹn sẽ là mẫu xe máy của tương lai giúp tiết kiệm nhiên liệu và bảo vệ môi trường.</p>
+            </div>
+        </section>
+        <section class="bot">
+            <h3>Sản phẩm khác</h3>
+            <div class="tab">
+                <div>
+                    <a href="impes.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/impes-banner.jpg"/>
+                            <figcaption>
+                                <h4>Impes</h4>
+                                <ul>
+                                    <li><h5>Tốc độ tối đa: 50 km/h</h5></li>
+                                    <li><h5>Nguồn: Pin LITHIUM</h5></li>
+                                    <li><h5>Công suất: 1200 W</h5></li>
+                                    <li><h5>Quãng đường trên 1 lần đổi pin: 68 Km</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="ludo.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/ludo-banner.jpg"/>
+                            <figcaption>
+                                <h4>Ludo</h4>
+                                <ul>
+                                    <li><h5>Tốc độ tối đa: 35 km/h</h5></li>
+                                    <li><h5>Nguồn:Pin LITHIUM</h5></li>
+                                    <li><h5>Công suất: 500 W</h5></li>
+                                    <li><h5>Quãng đường trên 1 lần đổi pin: 70 Km</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+                <h5>Liên hệ</h5>
+                <li><a href="tel: 1900 232289">1900 232389</a></li>
+                <li><a href="mailto:cskh@vinfast.vn">cskh@vinfast.vn</a></li>
+            </ul>
+            <ul>
+                <h5>Tin Tức</h5>
+                <li><a href="hot-news.html">Tin nổi bật</a></li>
+                <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+            </ul>
+            <ul>
+                <h5>Xe Ô Tô VinFast</h5>
+                <li><a href="lux-a2.html">Lux A2.0</a></li>
+                <li><a href="lux-sa2.html">Lux SA2.0</a></li>
+                <li><a href="fadil.html">Fadil</a></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+            </ul>
+            <ul>
+                <h5>Xe Máy Điện VinFast</h5>
+                <li><a href="klara.html">Klara</a></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+            </ul>
+            <ul id="menu-content">
+                <h5>Mạng xã hội</h5>
+                <div>
+                    <li><a href="https://www.facebook.com/VinFastAuto.Official/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/vinfastofficial/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/vinfastofficial"><i class="fab fa-twitter"></i></a></li>
+                </div>
+                <p>VinFast. All rights reserved. <br> &copy; Copyright 2018</p>
+            </ul>
+        </footer>
+    </body>
+</html>

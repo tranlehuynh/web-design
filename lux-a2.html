@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="LogoVinfast/favicon.png" rel="shortcut icon"/>
+        <title>LUX A2.0</title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <meta name="title" content="Mãnh liệt tinh thần Việt"/>
+        <meta name="keywords" content="Vinfast, VietNam, Vingroup"/>
+        <meta name="description" content="Trang giới thiệu sản phẩm Vinfast và doanh nghiệp"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/f47b38a0e2.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            //Go to top button
+                $(document).ready(function () {
+                    $(window).scroll(function (){
+                        if($(this).scrollTop() > 100) {
+                        //Show and hide the button
+                            $('.goToTopButton').fadeIn();
+                        } else {
+                            $('.goToTopButton').fadeOut();
+                        }
+                    });
+                    //Smooth scrolling
+                        $('.goToTopButton').click(function() {
+                            $('html,body').animate({scrollTop: 0}, 2000)
+                        })
+                });
+        </script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".but1").click(function() {
+                    $(".but1").css("background-color", "black");
+                    $(this).css("background-color", "green");
+                    $(".description ul").css("display", "none");
+                    var temp = $(this).attr("id");
+                    $("." + temp).css("display", "block");
+                });
+                $(".thumbnail a img").click(function() {
+                    $(".main-imag img").attr("src", $(this).attr("src"));
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="#" class="goToTopButton"><i class="fas fa-angle-double-up"></i></a>
+        <nav>
+            <ul class="pc-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i> </a></li>
+                <li class="child-nav"><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="car.html">Ôtô Vinfast</a></li>
+                        <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                        <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                    </ul>
+                </li>
+                <li class="child-nav"><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                    <ul>
+                        <li><a href="hot-news.html">Tin nổi bật</a></li>
+                        <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                    </ul>
+                </li>
+                <li><img class="logoVinFast" src="LogoVinfast/logoEdit.png" alt="Logo"></li>
+                <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+            </ul>
+            <ul class="mb-nav">
+                <li><img src="LogoVinfast/logo.png"/></li>
+                <li>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="height: 46px; background-color: black; font-size: 14px !important; padding: 0 !important; border: none;"><a><i class="fa fa-bars"></i></a></button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Danh mục</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li><a href="#">Sản phẩm <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="car.html">Ôtô Vinfast</a></li>
+                                            <li><a href="moto.html">Xe máy điện Vinfast</a></li>
+                                            <li><a href="https://chevrolet.com.vn/">Ôtô Chervolet</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Tin tức <i class="fa fa-chevron-down" style="padding: 0px 0px 0px 10px;"></i></a>
+                                        <ul>
+                                            <li><a href="hot-news.html">Tin nổi bật</a></li>
+                                            <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Hệ thống phân phối</a></li>
+                                    <li><a href="https://vinfast.vn/vi/ve-chung-toi">Về chúng tôi</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="infor">
+            <div class="imag">
+                <div class="main-imag"><img src="LogoVinfast/Product/a2-black.png" alt="Lux A2.0"></div>
+                <div class="thumb">
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-black.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-blue.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-brown.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-gray.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-orange.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-red.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-silver.png" alt="Lux A2.0"></a></div>
+                    <div class="thumbnail"><a href="#"><img src="LogoVinfast/Product/a2-white.png" alt="Lux A2.0"></a></div>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Thông tin cơ bản</h3>
+                <div class="but">
+                    <input type="button" value="Kích thước" class="but1" id="kt"/>
+                    <input type="button" value="Động cơ" class="but1" id="dc">
+                    <input type="button" value="Ngoại thất" class="but1" id="ngt">
+                    <input type="button" value="Nội thất" class="but1" id="nt">
+                    <input type="button" value="An toàn" class="but1" id="at">
+                </div>
+                <ul class="kt">
+                    <li>Dài x Rộng x Cao (mm): 4.973 x 1.900 x 1.464</li>
+                    <li>Chiều dài cơ sở (mm): 2,968</li>
+                    <li>Khối lượng bản thân (Kg): 1,797/535</li>
+                    <li>Khoảng sáng gầm xe (mm): 150</li>
+                </ul>
+                <ul class="dc">
+                    <li>Loại động cơ: 2.0L DOHC, I-4, tăng áp, van biến thiên, phun nhiên liệu trực tiếp</li>
+                    <li>Công suất tối đa (Hp/rpm): 174/4.500-6.000 -- 228/5,000-6,000</li>
+                    <li>Mô men xoắn cực đại (Nm/rpm): 300/1.750-4.000 -- 350/1,750-4,500</li>
+                    <li>Hộp số: Tự động 8 cấp</li>
+                    <li>Dẫn động: Cầu sau (RWD)</li>
+                    <li>Hệ thống treo trước: Độc lập, tay đòn dưới kép, giá đỡ</li>
+                    <li>Hệ thống treo sau: Độc lập, 5 liên kết với đòn dẫn hướng và thanh ổn định ngang, giám chấn khí nén</li>
+                    <li>Trợ lực lái: Thủy lực, điều khiển điện</li>
+                </ul>
+                <ul class="ngt">
+                    <li>Đèn LED phía trước
+                        <ul class="ngt" style="list-style-type: circle;">
+                            <li>Chiếu xa & chiếu gần & chiếu sáng ban ngày: LED</li>
+                            <li>Chế độ tự động bật/tắt</li>
+                            <li>Chế độ đèn chờ dẫn đường (tắt chậm)</li>
+                        </ul>
+                    </li>
+                    <li>Đèn LED chiếu sáng ban ngày</li>
+                    <li>Đèn LED phanh thứ 3 trên cao</li>
+                    <li>Đèn LED hậu</li>
+                    <li>Đèn LED chào mừng</li>
+                    <li>Gương chiếu hậu
+                        <ul class="ngt" style="list-style-type: circle;">
+                            <li>Chỉnh điện. Gập điện</li>
+                            <li>Đèn báo rẽ</li>
+                            <li>Chức năng sấy gương</li>
+                            <li>Tự động điều chỉnh khi vào số lùi</li>
+                        </ul>
+                    </li>
+                    <li>Gạt mưa trước tự động</li>
+                    <li>Kính cửa sổ chỉnh điện, lên/xuống một chạm, chống kẹt</li>
+                    <li>Kính cách nhiệt tối màu (2 kính cửa sổ hàng ghế sau & kính sau): Tùy chọn</li>
+                    <li>La-zăng và lốp: 18 inch, hợp kim nhôm. Lốp 245/45 R18</li>
+                    <li>Lốp (trước/sau: 245/45 R18; 245/45 R18</li>
+                    <li>Viền trang trí Chrome bên ngoài: Tùy chọn</li>
+                    <li>Ống xả cản sau: Ống xả đơn/đôi</li>
+                    <li>Màu xe (tùy chọn 1 trong 8 màu: Trắng, Đen, Cam, Nâu, Xanh, Xám, Đỏ, Bạc</li>
+                </ul>
+                <ul class="nt">
+                    <li>Số chỗ ngồi: 5</li>
+                    <li>Chìa khóa thông minh/khởi động bằng nút bấm</li>
+                    <li>Màn hình thông tin lái 7 Inch, màu</li>
+                    <li>Điều chỉnh ghế lái và ghế hành khách trước: Điều chỉnh 4 hướng, chỉnh cơ 2 hướng</li>
+                    <li>Màu nội thất: Tùy chọn 1 trong 3 màu</li>
+                    <li>Vô Lăng
+                        <ul class="nt" style="list-style-type: circle;">
+                            <li>Chỉnh tay 4 hướng</li>
+                            <li>Bọc da</li>
+                            <li>Tích hợp điều khiển âm thanh, đàm thoại rảnh tay</li>
+                            <li>Chức năng kiểm soát hành trình (Cruise control)</li>
+                        </ul>
+                    </li>
+                    <li>Hệ thống Điều Hòa
+                        <ul class="nt" style="list-style-type: circle;">
+                            <li>Hàng ghế 1: Điều hòa tự động, 2 vùng độc lập</li>
+                            <li>Hàng ghế 2: Cửa gió điều hòa hàng ghế sau</li>
+                            <li>Kiểm soát chất lượng không khí bằng ion</li>
+                        </ul>
+                    </li>
+                    <li>Hệ thống giải trí: Radio AM/FM, màn hình cảm ứng 10.4", màu</li>
+                    <li>Kết nối điện thoại thông minh</li>
+                    <li>Hệ thống âm thanh: 8 loa</li>
+                </ul>
+                <ul class="at">
+                    <li>Phanh trước: Đĩa tản nhiệt</li>
+                    <li>Phanh sau: Đĩa đặc</li>
+                    <li>Phanh tay điện tử</li>
+                    <li>Hệ thống chống bó cứng phanh (ABS)</li>
+                    <li>Chức năng phân phối lực phanh điện tử (EBD)</li>
+                    <li>Chức năng hỗ trợ phanh khẩn cấp (BA)</li>
+                    <li>Hệ thống cân bằng điện tử (ESC)</li>
+                    <li>Chức năng chống trượt (TCS)</li>
+                    <li>Chức năng hỗ trợ khởi hành ngang dốc (HSA)</li>
+                    <li>Đèn báo phanh khẩn cấp (ESS)</li>
+                    <li>Cảm biến phía trước hỗ trợ đỗ xe & Chức năng cảnh báo điểm mù: Tùy chọn</li>
+                    <li>Camera 360 độ (Tích hợp với màn hình): Tùy chọn</li>
+                    <li>Hệ thống căng đai khẩn cấp, hạn chế lực, hàng ghế trước</li>
+                    <li>Cốp xe có chức năng đóng/mở điện</li>
+                    <li>Hệ thống túi khí: 6 túi khí</li>
+                </ul>
+            </div>
+        </section>
+        <section class="the-showroom">
+            <div class="main-showroom"><h2>Đánh giá Vinfast Lux A2.0</h2></div>
+            <div class="middle-showroom"><h4>Ngoại thất</h4>
+                <p class="text-news">Vinfast Lux A2.0 sedan 2020 sở hữu diện mạo “lai tây” vô cùng độc đáo. Xe sử dụng chung khung gầm với BMW với kích thước tổng thể dài x rộng x cao lần lượt là 4973 x 1900 x 1500 mm. </p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/dau-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Phần đầu xe thuần Việt với logo hình chữ V sáng bóng nằm ở chính diện được tạo thành từ một đường line dài. Bộ lưới tản nhiệt trong nước sơn đen bật lên chất thể thao và giúp Vinfast Lux A2.0 trông thật sự khác biệt.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/luoi-tan-nhiet-vinfast-lux-a2.jpg" alt="Lux A2.0"></div>
+                <p class="text-news">Một cách khách quan, Vinfast Lux A2.0 đã có sự đột phá rất lớn trong phong cách thiết kế. Hốc đèn sương mù mở to hơn nhưng là nơi để chứa đèn pha LED, đèn sương mù lại nằm riêng phía trên và họ rất hào phóng khi dùng một dải cực dài kéo đến tận lưới tản nhiệt.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/than-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Phần thân chiếc Vinfast Lux A2.0 chịu ảnh hướng thiết kế từ những dòng xe Coupe khi sở hữu phần đuôi ngắn và một chiếc mũi dài. Khung viền cửa sổ làm dẹp hơn giúp chiếc xe thêm phần thể thao và cá tính.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/mam-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Mâm xe được làm từ hợp kim nhôm với kích thước 18-19 inch tùy ý, tạo hình cánh quạt cho cảm giác xé gió hơn khi lướt bánh. Xe sở hữu gương chiếu hậu có chức năng gập-chỉnh điện, sấy gương, tự động điều chỉnh khi lùi và được tích hợp đèn báo rẽ.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/can-sau-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Vinfast Lux A2.0 có phần đuôi xe “bắt trend” với nhiều thương hiệu nổi tiếng thế giới khi có đèn hậu là một dải LED kéo dài và dừng lại ở logo Vinfast. Các chi tiết thể thao cũng được đề cao như ống xả kép mạ crom cùng hốc khuếch tán mang cá tinh tế. </p>
+                <h4>Động cơ</h4>
+                <p class="text-news">Vinfast Lux A2.0 có trái tim là khối động cơ Xăng tăng áp 2.0L, i4, DOHC, van biến thiên, phun nhiên liệu trực tiếp cho công suất tối đa 174 mã lực, 300 Nm cho hai bản tiêu chuẩn và nâng cao.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/dong-co-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Cũng là cỗ máy trên, bản cao cấp cho bạn những trải nghiệm đáng tiền hơn khi tạo ra được công suất đến 228 mã lực, mô men xoắn tối đa 350 Nm. Tất cả các phiên bản đều sử dụng hộp số tự động ZF 8 cấp danh tiếng thế giới vào số rất nhanh và mượt. </p>
+                <h4>Vận hành mạnh mẽ với hệ dẫn động cầu sau</h4>
+                <p class="text-news">Đây là chiếc sedan hiếm hoi trong phân khúc sở hữu hệ dẫn động cầu sau cho lực đầy từ hai bánh sau vô cùng khỏe và mạnh. Bộ phanh đĩa tản nhiệt/đĩa đặc hoạt động hiệu quả với hiệu năng cao rất linh hoạt khi phanh gấp.</p>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/duoi-xe-vinfast-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Xe sử dụng thống treo trước dạng độc lập, tay đòn kép, giá đỡ bằng nhôm, treo sau độc lập, 5 liên kết với đòn hướng dẫn và thanh ổn định ngang vận hành khá êm ái. Gầm cao đến 150 mm- tương đối vừa phải để vượt địa hình cũng như bám đường tốt. </p>
+                <h4>An toàn đa dạng</h4>
+                <p class="text-news">Về tính an toàn, Vinfast Lux A2.0 hội tụ gần như nhiều tính năng và công nghệ nhất trong phân khúc. </p>
+                <h4>Kết luận</h4>
+                <div class="image-showroom"><img src="LogoVinfast/Product/review-a2.0/ket-luan-lux-a2.jpg" alt="Lux A2.0"/></div>
+                <p class="text-news">Nhìn chung, với sự bứt phá và vươn lên của xe Việt, Lux A2.0 hoàn toàn xứng đáng để được người mua đón tiếp nồng bậu. Vẻ ngoài hào nhoáng, nội thất tiện nghi cùng khả năng vận hành khoẻ nhất phân khúc, Lux A2.0 hứa hẹn là cái tên chinh phục khách hàng Việt khi cầm vô lăng test drive.</p>
+            </div>
+        </section>
+        <section class="bot">
+            <h3>Sản phẩm khác</h3>
+            <div class="tab">
+                <div>
+                    <a href="lux-sa2.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/sa2-banner.jpg"/>
+                            <figcaption>
+                                <h4>Lux SA 2.0</h4>
+                                <ul>
+                                    <li><h5>Kiểu xe: SUV</h5></li>
+                                    <li><h5>Hộp số: Tự động 8 cấp</h5></li>
+                                    <li><h5>Công suất tối đa: 228 mã lực</h5></li>
+                                    <li><h5>Mô men xoắn cực đại	: 350 Nm</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="fadil.html">
+                        <figure>
+                            <img src="LogoVinfast/Product/fadil-banner.jpg"/>
+                            <figcaption>
+                                <h4>Fadil</h4>
+                                <ul>
+                                    <li><h5>Kiểu xe: Hatchback</h5></li>
+                                    <li><h5>Hộp số: Vô cấp CVT</h5></li>
+                                    <li><h5>Công suất tối đa: 98 mã lực</h5></li>
+                                    <li><h5>Mô men xoắn cực đại: 128 Nm</h5></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+                <ul>
+                    <h5>Liên hệ</h5>
+                    <li><a href="tel: 1900 232289">1900 232389</a></li>
+                    <li><a href="mailto:cskh@vinfast.vn">cskh@vinfast.vn</a></li>
+                </ul>
+                <ul>
+                    <h5>Tin Tức</h5>
+                    <li><a href="hot-news.html">Tin nổi bật</a></li>
+                    <li><a href="foreign-news.html">Tin nước ngoài</a></li>
+                </ul>
+                <ul>
+                    <h5>Xe Ô Tô VinFast</h5>
+                    <li><a href="lux-a2.html">Lux A2.0</a></li>
+                    <li><a href="lux-sa2.html">Lux SA2.0</a></li>
+                    <li><a href="fadil.html">Fadil</a></li>
+                    <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+                </ul>
+                <ul>
+                    <h5>Xe Máy Điện VinFast</h5>
+                    <li><a href="klara.html">Klara</a></li>
+                    <li><a href="https://vinfast.vn/vi/showroom-va-dai-ly">Danh sách điểm bán</a></li>
+                </ul>
+                <ul id="menu-content">
+                    <h5>Mạng xã hội</h5>
+                    <div>
+                        <li><a href="https://www.facebook.com/VinFastAuto.Official/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/vinfastofficial/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://twitter.com/vinfastofficial"><i class="fab fa-twitter"></i></a></li>
+                    </div>
+                    <p>VinFast. All rights reserved. <br> &copy; Copyright 2018</p>
+                </ul>
+        </footer>
+    </body>
+</html>
